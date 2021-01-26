@@ -18,24 +18,23 @@ public class Main {
 
     @Autowired
     public Main(AuthorRepo authorRepo, BookRepo bookRepo) {
-
         this.authorRepo=authorRepo;
         this.bookrepo=bookRepo;
 
         Book book = new Book ();
-        book.setBookCategory(BookCategory.Belletristic);
+        book.setBookCategory(BookCategory.BELLETRISTIC);
         book.setTitle("Zbrodnia i kara");
-        book.setBookType(BookType.Audiobook);
+        book.setBookType(BookType.AUDIOBOOK);
 
         Book book2 = new Book ();
-        book2.setBookCategory(BookCategory.Belletristic);
+        book2.setBookCategory(BookCategory.BELLETRISTIC);
         book2.setTitle("Idiota");
-        book2.setBookType(BookType.Audiobook);
+        book2.setBookType(BookType.AUDIOBOOK);
 
         Book book3 = new Book ();
-        book3.setBookCategory(BookCategory.Belletristic);
+        book3.setBookCategory(BookCategory.BELLETRISTIC);
         book3.setTitle("Droga przez meke");
-        book3.setBookType(BookType.Audiobook);
+        book3.setBookType(BookType.AUDIOBOOK);
 
         Author author = new Author();
         author.setName("Fiodor");

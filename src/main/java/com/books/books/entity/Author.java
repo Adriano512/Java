@@ -8,7 +8,7 @@ import java.util.Set;
 public class Author {
 
     @OneToMany
-    @JoinColumn(name = "author_id")
+    @JoinColumn(name = "Author_Id")
     private Set<Book> bookSet;
     @Id
     @GeneratedValue (strategy = GenerationType.IDENTITY)
